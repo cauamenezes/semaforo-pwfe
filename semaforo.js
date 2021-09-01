@@ -1,5 +1,7 @@
 "use strict";
 
+const 
+
 const getId = (elemento) => document.getElementById(elemento);
 
 const semaforo = getId("semaforo")
@@ -16,12 +18,21 @@ const tornarVerde = () => {
   semaforo.src = "img/verde.png"
 };
 
+const semaforoDesligado = () => semaforo.src.includes("desligado")
+
+const automatico = () => {
+    const botaoAutomatico = getId("automatico")
+    
+}
+
 const automatizar = () => {
-    if((semaforo.src == "img/vermelho.png")){
-        semaforo.src = "img/amarelo"
-    } else if (semaforo.src == "img/amarelo.png") {
+    if(semaforo.src.includes("desligado")) {
+        semaforo.src = "img/vermelho"
+    } else if(semaforo.src.includes("vermelho") {
+        semaforo.src = "img/amarelo.png"
+    } else if (semaforo.src.includes("amarelo")) {
         semaforo.src = "img/verde.png"
-    } else if (semaforo.src == "img/verde.png") {
+    } else if (semaforo.src.includes("verde")) {
         semaforo.src = "img/vermelho.png"
     } else {
         semaforo.src = "img/vermelho.png"
