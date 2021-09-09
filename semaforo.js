@@ -28,7 +28,7 @@ const automatico = () => {
 const automatizar = () => {
     if(semaforo.src.includes("desligado")) {
         semaforo.src = "img/vermelho"
-    } else if(semaforo.src.includes("vermelho") {
+    } else if(semaforo.src.includes("vermelho")) {
         semaforo.src = "img/amarelo.png"
     } else if (semaforo.src.includes("amarelo")) {
         semaforo.src = "img/verde.png"
@@ -37,7 +37,7 @@ const automatizar = () => {
     } else {
         semaforo.src = "img/vermelho.png"
     }
-};
+}
 
 //eventos
 getId("vermelho").addEventListener("click", tornarVermelho);
