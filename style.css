@@ -11,10 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-h1 {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 header {
@@ -43,4 +40,17 @@ button {
   width: 100px;
   height: 25px;
   margin-top: 50px;
+  font-weight: bold;
+}
+
+#vermelho {
+  background-color: #ff0000;
+}
+
+#amarelo {
+  background-color: yellow;
+}
+
+#verde {
+  background-color: #00ff00;
 }
